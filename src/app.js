@@ -42,3 +42,43 @@ for(var a = 5; a >1; a--) {
     console.log(a);
 }
 console.log('a', a);
+
+let favFruits = ['apple', 'mango', 'avocado'];
+let fruits;
+let groceries = {
+    fruits: fruits,
+    rice: 'basmati',
+    polyBags: 2
+}
+groceries.fruits = 'banana';
+let anotherObject = new Object();
+anotherObject = {...groceries};
+anotherObject['test'] = 'some other value'
+console.log(groceries)
+console.log(anotherObject)
+// console.log(favFruits.indexOf('banana'))
+
+let showFruits = () => {
+    document.getElementById('fruits').innerText = favFruits;
+}
+
+let addBanana = () => {
+    console.log('before push',favFruits)
+    if(favFruits.indexOf('banana') === -1) {
+        favFruits.push('banana');
+        console.log('after push',favFruits)
+    }
+    // showFruits();
+    console.log('add banana', favFruits)
+}
+
+//splice and slice
+let spliceArray = ["apple", "mango", "avocado"]
+// To insert an element between apple and mango
+spliceArray.splice(1,0,'banana')
+
+/**
+ * push and pop
+ * push will add an element at the end of the array
+ * pop will remove the element at the end of the array
+ *  */
