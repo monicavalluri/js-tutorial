@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="./app.js"></script>
+        <script src="./array.js"></script>
     </head>
     <body>
-        <button onclick="test2(7,8)">click</button>
+        <!-- <button onclick="test2(7,8)">click</button>
         <p id="fruits"></p>
         <button onclick="showFruits()">Show Fruits</button>
-        <button onclick="addBanana()">Add banana</button>
+        <button onclick="addBanana()">Add banana</button> -->
+        <input type="text" id="add-name"/>
+        <button onclick="addNames()">Add Name</button>
+        <div>
+            <input type="text" id="remove-name"/>
+            <button onclick="removeNames()">Remove Name</button>
+            <p id="error-msg" style="margin: 0;color: red;font-size: 12px;"></p>
+        </div>
+        
+        <p id="show-result-list"></p>
     </body>
 </html>
