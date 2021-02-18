@@ -1,7 +1,7 @@
 /**
  * Public APIs : https://github.com/public-apis/public-apis
  * Assignment: Try hitting an API from the list above and display the values 
- * 
+ * JAM file: https://jamboard.google.com/d/1erocMSDQxpXnhCj7Qkz6saansiEywnYiDdgN8_NJgNo/edit?usp=meet_whiteboard
  **/
 let fetchData = () => {
     let request = new XMLHttpRequest();
