@@ -11,7 +11,7 @@ function add(a, b) {
     console.log("test is called " + (a +b));
 }
 add(2);
-
+var test = 2;
 // var test2 = function() {
 //     console.log("test2 is called");
 // }
@@ -37,7 +37,6 @@ let test2 = (a = 5, b = 6) => {
 }
 
 // test2(2,2);
-
 for(var a = 5; a >1; a--) {
     console.log(a);
 }
@@ -82,3 +81,6 @@ spliceArray.splice(1,0,'banana')
  * push will add an element at the end of the array
  * pop will remove the element at the end of the array
  *  */
+
+
+a = [1, 2, 3]

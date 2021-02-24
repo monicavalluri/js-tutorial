@@ -17,6 +17,12 @@ let fetchData = () => {
       fetch('https://cat-fact.herokuapp.com/facts')
       .then(response => response.json())
       .then(data => showFetchApiData(data))
+      .catch()
+
+      fetch('https://api.github.com/users/naveenvrma/repos')
+      .then(response => response.json())
+      .then(data => showGithubRepos(data))
+
 }
 
 let showData = (responseData) => {
@@ -32,5 +38,14 @@ let showFetchApiData = (responseData) => {
         let textEl = document.createElement('li');
         textEl.innerText = elementObject['text'];
         document.getElementById('cats').appendChild(textEl)
+    }
+}
+
+let showGithubRepos = (responseData) => {
+    for(let i=0; i< responseData.length; i++) {
+        let repo = responseData[i];
+        let repoEl = document.createElement('li');
+        repoEl.innerHTML = `<a href='${repo.svn_url}' target='_blank'>${repo.name}</a>`;
+        document.getElementById('github-repos').appendChild(repoEl);
     }
 }

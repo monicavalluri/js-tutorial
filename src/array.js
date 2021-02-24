@@ -52,13 +52,40 @@ let priceMap = {
     'apple': 1,
     'mango': 2,
     'pear': 2,
-    'bill': ''
+    'bill': '',
+    'pear': 4,
+    'pear': 10
 }
+console.log('price of pear', priceMap['pear'])
+price = [1, 2, 3, 4, 5]
+fruits= ['apple', 'mango', 'pear']
 
 let num = 1;
-for(let fruit in priceMap) {
-    console.log(fruit, priceMap[fruit])
+for(let i in priceMap) {
+    console.log(i, priceMap[i])
 }
 
 console.log(Object.keys(priceMap).map(fruit => 
     priceMap[fruit]))
+
+const array1 = [1, 2, 3]
+const array2 = [4, 5, 6, 8]
+
+for(let i=0; i < array1.length; i++) {
+    for(let j=0; j < array2.length; j++) {
+        console.log(i, j)
+    }
+}
+console.log("=========================================")
+
+/**
+ * 0,0
+ * 0,1
+ * 0,2
+ * 1,0
+ * 1,1
+ * 1,2
+ * 2,0
+ * 2,1
+ * 2,2
+ */
